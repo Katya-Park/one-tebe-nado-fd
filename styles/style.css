@@ -60,13 +60,12 @@ header {
   min-width: 240px;
   min-height: 98px;
   text-decoration-skip-ink: none;  
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+ 
 } 
 
  .header__address { 
-  display: block;
-  color: #000000;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
   margin-left: 197px;
 } 
 
@@ -75,18 +74,14 @@ header {
   flex-direction: column;
   position:relative;
   justify-content: space-between;
-  
-  
   min-height: 757px;
   text-transform:uppercase; 
-  padding:165px 50px 50px 50px;  
 }
 
 .background {
   background-image: url('../images/cover.jpg');
   min-width: 1100px;
-  min-height: 757px;
-  
+  min-height: 757px; 
 }
 
 .overlay {
@@ -102,9 +97,13 @@ header {
   gap: 20px;
   align-items: stretch;
   z-index: 2;
+  margin-top: 165px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .aligned-text {
+  font-family: 'Raleway';
   display: block;
   font-size: 100px;
   color: #FFFFFF;
@@ -129,7 +128,7 @@ header {
 }
 
 .no-letter-spacing {
-  letter-spacing: 0;
+  margin-left: -20px;
 }
 
 .cover__description {
@@ -137,8 +136,9 @@ header {
   gap: 107px;
   flex-direction: row;
   align-items: center;
-  bottom: 50px;
   z-index: 2;
+  margin-bottom: 50px;
+  margin-left: 50px;
 }
 
 .cover__description-text {
@@ -148,7 +148,7 @@ header {
   font-weight: 400;
   word-spacing:18px;
   color: #FFFFFF;
-  margin: 0;
+  
 }
   
 .bet-button {
@@ -156,8 +156,6 @@ header {
   font-family: 'Raleway, sans-serif';
   font-size: 22px;
   line-height: 100%;
-  padding: 0;
-  margin: 0;
   border: 1px solid #FFFFFF;
   padding: 12px 32px;
   font-weight: 400;
@@ -168,6 +166,7 @@ header {
 
 .lots {
   margin: 180px 24px 120px 24px ; 
+  
 }
 
 .lots__heading {
@@ -177,11 +176,10 @@ header {
   line-height: 100%;
   color: #000000;
   text-align: left;
-  margin-bottom: 23px;
-  margin-left: 64px;
+  margin-bottom: 27px;
+  margin-left: 40px;
   text-transform: uppercase; 
 }
-
 
 
 .lots__card-list {
@@ -236,7 +234,7 @@ flex-grow: 0;
   text-transform: uppercase;
   text-decoration: underline;
   display: block;
-  font-family: 'Raleway, sans-serif';
+  font-family: 'Raleway';
   width: 700;
   line-height: 1.2;
   font-size: 22px;
@@ -276,39 +274,42 @@ flex-grow: 0;
 
 .about {  
  min-height: 595px;
- 
+ padding: 0;
 }
 
 .about__column {
   display: grid;
   grid-template-columns: 334px 1fr;
   justify-content: center;
-  gap: 72px;
-  
+  gap: 72px; 
 }
 
 .about__logo {
   display: flex;
+  justify-content: center; 
+  align-items: center;       
   width: 240px;
   height: 240px;
-  border-radius: 50%;
+  border-radius: 50%;      
   background-color: #000000;
-  background-repeat: no-repeat;
+  overflow: hidden;         
   margin-top: 35px;
   margin-left: 47px;
 }
-
-
 .about__logo-image {
- justify-content: center;
- align-items: center;
+  width: 148px;
+  height: 114px; 
+  display: block;
 }
 
 .about__article {
   min-height: 449px;
   margin-top: 136px;
+  margin-right: 0;
+  margin-left: 0;
+  
+  
 }
-
 .about__title { 
   text-transform: uppercase;
   font-family: 'Raleway';
@@ -316,6 +317,7 @@ flex-grow: 0;
   font-weight: 700;
   margin-bottom: 100px;
   line-height: 100%;
+  
 }
 
 .about__text {
@@ -325,31 +327,34 @@ flex-grow: 0;
   font-family: 'Raleway';
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;  
+  line-height: 24px; 
+  
 }
 
 footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
   color: #000000;
-  font-family:'Raleway, sans-serif';
+  font-family:'Raleway';
   font-size: 18px;
   min-height: 180px;
-  padding: 180px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 180px;
+  margin-right: 50px;
+  padding: 0;
+  
+  
 }
 
-.footer-address {
-  display: flex;
-  max-width: 264px;
-  flex-direction: column;
+.footer__address { 
+  margin-left: 50px;
+ 
 }
 
 .footer__menu {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-left: 177px;
 }
 
 .footer__menu-list {
@@ -369,6 +374,7 @@ footer {
 display: flex;
 list-style:none;
 gap: 48px;
+padding-left: 177px;
 }
 
 .footer__social-icon {
