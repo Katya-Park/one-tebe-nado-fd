@@ -1,1 +1,1 @@
-https://github.com/Katya-Park/one-tabe-nado-fd
+https://github.com/Katya-Park/one-tebe-nado-fd
